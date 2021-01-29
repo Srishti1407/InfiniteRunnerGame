@@ -90,6 +90,9 @@ function draw() {
     restart.visible = false;
     
     ground.velocityX = -(4 + 3* score/100)
+    
+    camera.position.x = displayWidth/2;
+    camera.position.y = displayHeight/2;
     //scoring
     score = score + Math.round(getFrameRate()/60);
     
